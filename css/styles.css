@@ -90,12 +90,35 @@ h6 {
   display: none;
 }
 
+.social-media__links {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--icons-color)
+}
+
+.social-media__links p {
+  font-size: 1.1em ;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-right: 15px;
+}
+
+.social-media__links ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.social-media__links li {
+  margin-right: 15px;
+}
+
 .share-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: var(--bg-color);
 }
