@@ -20,6 +20,8 @@ body {
   font-family: var(--heading-font);
   background-color: var(--bg-color);
   font-size: var(--default-size);
+  color: var(--font-color);
+  line-height: 1.6em;
 }
 
 h1,
@@ -33,7 +35,7 @@ h6 {
 }
 
 .container {
-  width: 85%;
+  width: 87%;
   margin: 70px auto;
 }
 
@@ -43,7 +45,7 @@ h6 {
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow:  0 8px 16px -6px var(--icons-color);
+  box-shadow: 0 8px 10px -6px var(--icons-color);
 }
 
 .card .card__image img {
@@ -53,13 +55,11 @@ h6 {
 }
 
 .card .card_info {
-  color: var(--font-color);
-  line-height: 1.6em;
   padding: 35px 30px 20px;
 }
 
 .card__body .card__title {
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.6em;
   margin-bottom: 15px;
 }
