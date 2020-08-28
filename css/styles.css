@@ -70,8 +70,9 @@ h6 {
 
 .card__footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .avatar {
