@@ -8,12 +8,16 @@ let showMedia = false;
 shareButton.onclick = () => {
   if (!showMedia) {
     socialMediaLinks.style.display = "initial";
-    avatar.style.display = "none";
+    console.log(window.screen.width);
+    if (window.screen.width < 1024) {
+      avatar.style.display = "none";
+    }
   } else {
     avatar.style.display = "inherit";
     socialMediaLinks.style.display = "none";
   }
   cardFooter.classList.toggle("active-share");
+
   shareButton.classList.toggle("active-share-button");
   showMedia = !showMedia;
 };

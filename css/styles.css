@@ -73,6 +73,8 @@ h6 {
 
 .avatar {
   display: inherit;
+  position: relative;
+  z-index: 1;
 }
 
 .avatar .avatar__img {
@@ -83,6 +85,7 @@ h6 {
 }
 
 .social-media {
+  position: relative;
   display: none;
 }
 
@@ -154,11 +157,12 @@ h6 {
   .card {
     display: flex;
     font-size: 15px;
+    overflow: visible;
   }
 
   .card .card_info {
-   padding-left: 55px;
-   padding-right: 55px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 
   .card .card__image {
@@ -179,6 +183,9 @@ h6 {
     line-height: 1.5em;
   }
 
+  .active-share {
+    background-color: white;
+  }
   .card__footer {
     padding: 5px 55px 30px;
     justify-content: space-between;
@@ -187,5 +194,29 @@ h6 {
   .share-button {
     width: 38px;
     height: 38px;
+  }
+  .card__footer {
+    position: relative;
+  }
+  .social-media {
+    position: absolute;
+    background-color: var(--titles-color);
+    top: -65px;
+    right: -52px;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-size: 12px;
+    box-shadow: 0 8px 10px -6px var(--icons-color);
+  }
+
+  .social-media::after {
+    content: " ";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--titles-color) transparent transparent transparent;
   }
 }
