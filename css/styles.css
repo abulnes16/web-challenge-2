@@ -58,13 +58,11 @@ h6 {
   padding: 35px 35px 20px;
 }
 
-.card__body .card__title {
+.card__description .card__title {
   font-size: 1.2em;
   line-height: 1.6em;
   margin-bottom: 15px;
 }
-
-
 
 .card__footer {
   display: flex;
@@ -88,15 +86,14 @@ h6 {
   display: none;
 }
 
-
 .social-media__links {
   display: flex;
   justify-content: space-evenly;
-  color: var(--icons-color)
+  color: var(--icons-color);
 }
 
 .social-media__links p {
-  font-size: 1.1em ;
+  font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 0.3em;
   margin-right: 15px;
@@ -123,7 +120,7 @@ h6 {
 }
 
 .active-share {
- background-color: var(--titles-color); 
+  background-color: var(--titles-color);
 }
 
 .active-share-button path {
@@ -141,4 +138,54 @@ h6 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    width: 65%;
+  }
+
+  .card {
+    display: flex;
+    font-size: 15px;
+  }
+
+  .card .card_info {
+   padding-left: 55px;
+   padding-right: 55px;
+  }
+
+  .card .card__image {
+    width: 90%;
+  }
+
+  .card .card__image img {
+    height: 100%;
+  }
+
+  .card__description .card__title {
+    font-size: 1.7em;
+    line-height: 1.4em;
+  }
+
+  .card__description p {
+    text-align: justify;
+    line-height: 1.5em;
+  }
+
+  .card__footer {
+    padding: 5px 55px 30px;
+    justify-content: space-between;
+  }
+
+  .share-button {
+    width: 38px;
+    height: 38px;
+  }
 }
