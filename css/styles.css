@@ -64,15 +64,13 @@ h6 {
   margin-bottom: 15px;
 }
 
-.card__body p {
-  margin-bottom: 10px;
-}
+
 
 .card__footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 20px 0;
 }
 
 .avatar {
@@ -89,6 +87,7 @@ h6 {
 .social-media {
   display: none;
 }
+
 
 .social-media__links {
   display: flex;
@@ -121,6 +120,18 @@ h6 {
   height: 32px;
   border-radius: 50%;
   background-color: var(--bg-color);
+}
+
+.active-share {
+ background-color: var(--titles-color); 
+}
+
+.active-share-button path {
+  fill: white;
+}
+
+.active-share-button {
+  background-color: var(--font-color);
 }
 
 /* Footer */
